@@ -26,6 +26,12 @@ namespace StudentCourseAPI.Controllers
             return _studentService.GetStudentById(id);
         }
 
+        [HttpGet("{id}/{name}")]
+        public Student GetStudentByName(string name)
+        {
+            return _studentService.GetStudentByName(name);
+        }
+
         [HttpPost]
         public void PostStudent(Student student)
         {

@@ -7,6 +7,8 @@ namespace StudentCourseAPI
     {
         Student GetStudentById(int id);
 
+        Student GetStudentByName(string name);
+
         List<Student> GetStudents();
 
         void AddStudent(Student student);

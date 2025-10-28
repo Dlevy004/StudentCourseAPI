@@ -31,6 +31,12 @@ namespace StudentCourseAPI
             return student ?? new Student();
         }
 
+        public Student GetStudentByName(string name)
+        {
+            var student = _students.Find(s => s.Name == name);
+            return student ?? new Student();
+        }
+
         public List<Student> GetStudents()
         {
             return _students;
