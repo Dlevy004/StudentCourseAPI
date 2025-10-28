@@ -2,10 +2,10 @@
 {
     public class Course
     {
-        private int Id { get; set; }
+        public int Id { get; set; }
 
-        private string Title { get; set; }
+        public string Title { get; set; }
 
-        private int Credits { get; set; }
+        public int Credits { get; set; }
     }
 }
