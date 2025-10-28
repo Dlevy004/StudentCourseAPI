@@ -14,5 +14,7 @@ namespace StudentCourseAPI
         void AddStudent(Student student);
         void UpdateStudent(Student student);
         void DeleteStudent(int id);
+
+        int PrintAverageAge();
     }
 }

@@ -56,5 +56,11 @@ namespace StudentCourseAPI.Controllers
             _studentService.DeleteStudent(id);
         }
 
+        [HttpGet("averageAge")]
+        public int GetAverageAge()
+        {
+            return _studentService.PrintAverageAge();
+        }
+
     }
 }

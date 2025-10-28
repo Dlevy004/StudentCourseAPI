@@ -42,6 +42,17 @@ namespace StudentCourseAPI
             return _students;
         }
 
+        public int PrintAverageAge()
+        {
+            int totalAge = 0;
+            foreach (var student in _students)
+            {
+                totalAge += student.Age;
+            }
+
+            return totalAge / _students.Count;
+        }
+
         public void UpdateStudent(Student student)
         {
             var oldStudent = _students.Find(s => s.Id == student.Id);
